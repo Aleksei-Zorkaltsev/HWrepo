@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+html,
+body{ 
+    margin: 0;
+    padding: 0; 
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+/*Шапка сайта*/
+.header {
+    height: 99px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.headercontainer{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: inherit;
+    background: url(../img/logo.png) center left no-repeat;
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-left: 60px;
+    letter-spacing: 0.68px;
+}
+.logo span{
+    font-weight: 900;
+    color: #f16d7f;
+}
+.browseSearch {
+    height: 36px;
+    margin-left: 37px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+.browse {
+    width: 86px;
+    height: 36px;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    background-color: #f8f8f8;
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0.35px;
+}
+.browse i{
+    color: gray;
+    margin-left: 8px;
+}
+.browse:hover{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+}
+.browse:active i{
+    color: #f16d7f;
+}
+.searchtop{
+    width: 264px;
+    padding-left: 16px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0.35px;
+    background: none;
+}
+.searchtop:focus{
+    background-color: #e6e6e6;
+}
+.buttopSearchTop{
+    width: 36px;
+    background: none;
+    border: none;
+    border-left: 1px solid #e6e6e6;
+    height: inherit;
+    color: gray;
+    outline: none;
+}
+.buttopSearchTop:hover{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+}
+.buttopSearchTop:active{
+    color: #f16d7f;
+}
+.cart{
+    margin-left: 351px;
+    margin-right: 26px;
+}
+.myAccount{
+    text-align: center;
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f; 
+    line-height: 38px;
+}
+.myAccount i{
+    margin-left: 8px;  
+}
+.myAccount a{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.38px;
+    text-decoration: none;
+    color: white;
+}
+.myAccount:active{
+    background: linear-gradient(180deg, rgba(201,100,115,1) 0%, rgba(241,109,127,1) 100%);
+}
+/*Панель навигации*/
+.nav{
+    width: 680px;
+    margin: 0 auto;
+    height: 51px;
+    display: flex;
+    justify-content: space-between
+}
+.nav a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 51px;
+}
+.nav a:hover{
+    color: dimgray;
+}
+.nav a:active{
+    color: #f16d7f;
+}
+/*Большой промо блок. Превью*/
+.prewiew {
+    overflow: hidden;
+    background-color: #e8e8e8;
+    height: 613px;
+}
+.prewiewText {
+    height: inherit;
+    color: #222222;
+    padding-left: 12px;
+    margin-top: 224px;
+    height: 91px;
+    font-weight: 900;
+    border-left: 10px solid #f16d7f;
+    font-size: 40px;
+    line-height: 63px;
+    letter-spacing: 1px;
+}
+.prewiewText div{
+    line-height: 43px;
+    font-size: 60px; 
+    letter-spacing: 1.5px;
+}
+.prewiewText span{
+    color: #f16d7f;
+}
+.backPrewiewtop {
+    overflow: hidden;
+    height: inherit;
+    background-image: url(../img/topHeaderBack.png);
+    background-repeat: no-repeat;
+    background-position: top right 40px;
+    background-size: 48%;
+}
+/*Категории*/
+.categories {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 820px;
+}
+.contanerCategories {
+    height: inherit;
+    position: relative;
+}
+.hotdeal {
+    width: 560px;
+    height: 542px;
+    background-image: url(../img/offer1.jpg);
+    position: absolute;
+    top:0;
+    left:0;
+}
+.luxious{
+    width: 560px;
+    height: 261px;
+    background-color: #dadad2;
+    background: url(../img/offer2.jpg) top right;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.offer30{
+    width: 560px;
+    height: 261px;
+    background-image: url(../img/offer3.jpg);
+    position: absolute;
+    top:0;
+    right:0;
+}
+.newArriwals{
+    width: 560px;
+    height: 542px;
+    background-image: url(../img/offer4.jpg);
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+.whiteboxCattegories{
+    padding: 16px 16px 16px 16px;
+    position: absolute;
+    top: 26px;
+    background-color: #ffffff; 
+    text-decoration: none;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.45px;
+}
+.whiteboxCattegories div{
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+}
+.whiteboxCattegories:active{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+}
+/*Блок с товарами*/
+.featuredItems{
+    text-align: center;
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+.featuredItems span{
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0.75px;
+}
+.itemS {
+    margin-top: 60px;
+    margin-bottom: 58px;
+}
+.row{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.item {
+position: relative;
+width: 260px;
+height: 364px;
+background-color: #ffffff;  
+overflow: hidden;
+}
+.item a{
+    text-decoration: none;
+}
+.item:hover{
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+
+}
+.prewiewITemImage {
+    position: relative;
+    text-align: center;
+    width: 261px;
+    height: 280px;
+    background-color: #e9e9e9;
+}
+.nameItem {
+    margin: 19px 0 17px 15px;
+    color: #222222;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;  
+}
+.price {
+    color: #f16d7f;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;    
+}
+.hoverItem {
+    text-decoration: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 261px;
+    height: 280px;
+    background-image: url(../imgSaleItems/Background.png);
+    display: none;
+}
+.AddCart{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    width: 123px;
+    height: 39px;
+    border: 1px solid #ffffff;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.AddCart:active{
+    background-color: #a2a2a2;
+    
+}
+.item:hover .hoverItem{
+    display: flex;
+}
+.browseAllbutton {
+margin: 0 auto;
+text-decoration: none;
+display: flex;
+align-items: center;
+width: 212px;
+height: 48px;
+background-color: #f16d7f;
+}
+.browseAllbutton:active{
+    background: linear-gradient(180deg, rgba(201,100,115,1) 0%, rgba(241,109,127,1) 100%);
+}
+.browseAllbutton span{
+margin-left: 24px;
+margin-right: 9px;
+color: #ffffff;
+font-size: 16px;
+font-weight: 700;
+letter-spacing: 0.4px;
+}
+/*Рекламный блок с рекламой сервиса*/
+.offer30Block {
+    margin-top: 113px;
+    height: 529px;
+    background: url(../img/offerForWomen.jpg) no-repeat;
+    background-color: #222224;
+    
+}
+.textOfferGirlImg {
+    margin-top: 142px;
+    margin-left: 39px;
+    height: 78px;
+    float: left;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 1.5px;
+}
+.textOfferGirlImg span{
+    color: #f16d7f;
+}
+.textOfferGirlImg div{
+    font-size: 32px;
+    letter-spacing: 0.9px;
+}
+.service {
+    float: right;
+    width: 373px;
+    color: white;
+    display: flex;
+    flex-direction: column;  
+}
+.service p{
+    margin-left: 111px;
+    width: 220px;
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0.35px;
+}
+.freeDelivery {
+    margin-top: 48px;
+    height: 102px;
+}
+.buss {
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+}
+.buss span{
+    margin-left: 33px;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.salesDiscounts {
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+}
+.sale{
+    margin-top: 54px;
+    height: 102px; 
+}
+.sale span{
+    margin-left: 36px;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.qualityAssurance {
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+}
+.crown{
+    margin-top: 51px;
+    height: 102px; 
+}
+.crown span{
+    margin-left: 33px;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+/*Отзывы и подписка*/
+.review {
+    position: relative;
+    margin: 100px auto 0;
+    width: 1600px;
+    height: 438px;
+    background-image: url(../img/subscribe.jpg);
+    overflow: hidden;
+}
+.reviewSmoke {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    background: url(../img/smoke.png) no-repeat;
+}
+.reviewSpacing {
+    height: inherit;
+}
+.spaceenddelete {
+    background-color: #3e3e3e;
+    height: 600px;
+}
+.comments {
+    width: 569px;
+    float: left;
+    height: inherit;
+    border-right: 1px solid white;
+}
+.subscribe_block {
+    float: left;
+    width: 569px;
+}
+.subscribeText {
+    padding-top: 148px;
+    text-align: center;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 24px;
+}
+.subscribeText span{
+font-size: 24px;
+letter-spacing: 0.6px;
+}
+.emailEnterSub{
+width: 386px;
+margin: 35px auto 0;
+height: 46px;
+border-radius: 23px;
+background-color: #e1e1e1;
+overflow: hidden;
+}
+.emailEnterSub input{
+    width: 252px;
+    padding-left: 28px;
+    height: 46px;
+    border:none;
+    background: none;  
+    outline: none;
+}
+.emailEnterSub input:focus{
+    background-color: white;
+}
+.emailEnterSub button{
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    width: 104px;
+    height: inherit;
+    background-color: #f16d7f;
+    border: none;
+    outline: none;
+}
+.emailEnterSub button:active{
+    background: linear-gradient(180deg, rgba(201,100,115,1) 0%, rgba(241,109,127,1) 100%);    
+}
+.comments input{
+    border: none;
+    width: 100px;
+    background-color: aqua;
+}
+.personalCommetsBlock{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 0px;
+}
+.personalCommetsBlock img{
+    margin-top: 111px;
+    float: left;
+}
+.textPersonalReview{
+    float: right;
+    margin-right: 72px;
+    margin-top: 123px;
+    margin-bottom: 37px;
+}
+.personalCommetsBlock p{
+    margin: 0;
+    width: 388px;
+    color: #222224;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+.personalCommetsBlock span{
+    margin-top: 19px;
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    line-height: 36px;
+}
+.paginationBlock {
+    clear: both;
+    width: 140px;
+    margin-left: 115px;
+    display: flex;
+    justify-content:space-between;
+}
+.pagination{
+    display: block;
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+.pagination:hover{
+    background-color: #f5f5f5;
+}
+.activePagination{
+    background-color: #f16d7f;
+}
+/*Информация по комании и сайту*/
+.logo_compinfo {
+    height: 51px;
+    background: url(../img/logo.png) center left no-repeat;
+    display: flex;
+    align-items: center;
+}
+.brand {
+    width: 498px;
+}
+.brand p{
+width: 427px;
+color: #898989;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0.35px;
+}
+.logo_compinfo a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-left: 60px;
+    letter-spacing: 0.68px;
+}
+.logo_compinfo span{
+    font-weight: 900;
+    color: #f16d7f;
+}
+.company_info {
+    margin-top: 109px;
+    display: flex;
+}
+.company_info h3{
+color: #f16d7f;
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0.45px;
+}
+.col_info a{
+text-decoration: none;
+margin: 0;
+color: #898989;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0.4px;
+line-height: 39px; 
+}
+.col1,
+.col2{
+    width: 230px;
+}
+.col_info a:hover{
+    color: #4d4d4d;
+}
+.col_info a:active{
+    color: #f16d7f;
+}
+/*футер и соцсети*/
+.footer {
+    margin-top: 89px;
+    height: 79px;
+    background-color: #e6e6e6;
+}
+.footerContent {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+.boxSocial {
+    display: flex;
+}
+.social_logo{
+    margin-left: 8px;
+}
+.social_logo i{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 16px;
+    line-height: 32px;
+}
+.social_logo:hover i{
+    color: #d8d8d8;
+    background-color: #ededed;
+}
+.social_logo:active i{
+    color: white;
+    background-color: #f16d7f;
+}
