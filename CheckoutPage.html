@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SinglePage</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-   <div class="header">
+<div class="header">
     <div class="container headercontainer">
         <div class="logo">
             <a href="#">BRAN<span>D</span></a>
@@ -23,7 +23,7 @@
             <a href="">MyAccount <i class="fa fa-caret-down" aria-hidden="true"></i></a>
         </div>
     </div>
-    </div>
+</div>
 <nav class="topNav">
     <a href="index.html">HOME</a>
     <a href="#">MAN</a>
@@ -43,93 +43,59 @@
         </nav>
     </div>
 </div>
-    <div class="single_prew">
-        <img src="img/Layer_42.png" alt="img">
-    </div>
-    <div class="single_infoItem">
-        <div class="single_ContainerInfo">
-            <h2>WOMEN COLLECTION</h2>
-            <div class="decorationline_infoItem">
-                <div class="decorationline_red"></div>
-            </div>
-            <h3>MOSCHINO CHEAP AND CHIC</h3>
-            <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-            <div class="single_spectfic_Item">
-                <div class="spectficItem_characteristic">
-                    MATERIAL: <span>COTTON</span>
-                </div> 
-                <div class="spectficItem_characteristic">
-                    DESIGNER: <span>BINBURHAN</span>
-                </div>        
-            </div>
-            <h4>$561</h4>
-            <form action="#">
-                <div class="single_Choices_Item">
-                    <div class="single_ChoiseUser">
-                        CHOOSE COLOR <br>
-                        <div class="selectColorPrew"></div>
-                        <select class="single_userColor" name="#" id="#">
-                            <option>
-                                Red
-                                </option> 
-                            <option>
-                                Black
-                                </option>
-                            <option>
-                                White
-                                </option>
-                        </select>
+
+<div class="container checkout_main">
+    <section><a href="#"><h2><span>01.</span>SHIPPING ADRESS</h2></a> 
+        <div class="checkout_content_01">
+            <form class="checkout_shipAd_left">
+                <h3>Check as a guest or register</h3>
+                <span>Register with us for future convenience</span>
+                <div class="radioButtonBlock">
+                    <div>
+                        <input class="radio" type="radio"> CHECKOUT AU GUEST
                     </div>
-                    <div class="single_ChoiseUser">
-                        CHOOSE SIZE <br>
-                        <select class="single_userSize" name="#" id="#">
-                            <option>XXL</option> 
-                            <option>XL</option>
-                            <option>M</option>
-                            <option>S</option>
-                            <option>L</option>
-                        </select>
-                    </div>
-                    <div class="single_ChoiseUser">
-                        QUANTITY <br>
-                        <input type="number" min="1" value="1">
+                    <div>
+                        <input class="radio" type="radio"> REGISTER
                     </div>
                 </div>
-                <button type="submit"><img src="img/Forma_1_copy.png" alt="cart">Add to Cart</button>
+                <h3>register and save time!</h3>
+                <span>Register with us for future convenience</span>
+                <br>
+                <span>Fast and easy checkout<br>
+                Easy access to your order history and status</span>
+                <button type="submit">Continue</button>
+            </form>
+            <form class="checkout_shipAd_right" action="#">
+                <h3>Already registed?</h3>
+                <span>Please log in below</span>
+                <h4>EMAIL ADDRESS <span>*</span></h4>
+                <input type="email">
+                <h4>PASSWORD <span>*</span></h4>
+                <input type="password">
+                <div class="checkout_warrning">* Required Fileds</div>
+                <button type="submit">Log in</button>
+                <a class="Checkout_forgotPass"href="#">Forgot Password ?</a>
             </form>
         </div>
-    </div>
-<div class="single_you_may_like_also">
-    <h2>YOU MAY LIKE ALSO</h2>
-    <a href="#" class="item">
-        <div class="prewiew_like_Also">
-            <img src="imgSaleItems/Layer_44.png" alt="img">
-        </div>
-        <div class="nameItem like_also_nameItem">BLAZE LEGGINGS</div>
-        <div class="price">$52.00</div>
-    </a>
-    <a href="#" class="item">
-        <div class="prewiew_like_Also">
-            <img src="imgSaleItems/Layer_45.png" alt="img">
-        </div>
-        <div class="nameItem like_also_nameItem">ALEXA SWEATER</div>
-        <div class="price">$52.00</div>
-    </a>
-    <a href="#" class="item">
-        <div class="prewiew_like_Also">
-            <img src="imgSaleItems/Layer_46.png" alt="img">
-        </div>
-        <div class="nameItem like_also_nameItem">AGNES TOP</div>
-        <div class="price">$52.00</div>
-    </a>
-    <a href="#" class="item">
-        <div class="prewiew_like_Also">
-            <img src="imgSaleItems/Layer_47.png" alt="img">
-        </div>
-        <div class="nameItem like_also_nameItem">SYLVA SWEATER</div>
-        <div class="price">$52.00</div>
-    </a>
-</div>
+    </section>
+    <section><a href="#"><h2><span>02.</span>BILLING INFORMATION</h2></a> 
+       <div class="checkout_content_02"></div>
+    </section>
+       <section><a href="#"><h2><span>03.</span>SHIPPING INFORMATION</h2></a> 
+       <div class="checkout_content_03"></div>
+    </section>
+    <section><a href="#"><h2><span>04.</span>SHIPPING METHOD</h2></a> 
+       <div class="checkout_content_04"></div>
+    </section>
+    <section><a href="#"><h2><span>05.</span>PAYMENT METHOD</h2></a> 
+       <div class="checkout_content_05"></div>
+    </section>
+    <section><a href="#"><h2><span>06.</span>ORDER REVIEW</h2></a> 
+       <div class="checkout_content_06"></div>
+    </section>
+</div> 
+
+
 <div class="review">
     <div class="reviewSmoke">
         <div class="container reviewSpacing"> 
@@ -168,41 +134,41 @@
         <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships. </p>
         <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
     </div>
-        <div class="col_link">
+        <nav class="col_link">
             <h3>COMPANY</h3>
             <a href="#">Home </a><br>
             <a href="#">Shop</a><br>
             <a href="#">About</a><br>
             <a href="#">How It Works</a><br>
             <a href="#">Contact</a><br>
-        </div>
-        <div class="col_link">
+        </nav>
+        <nav class="col_link">
             <h3>INFORMATION</h3>
             <a href="#">Tearms &amp;Condition</a><br>
             <a href="#">Privacy Policy</a><br>
             <a href="#">How to Buy</a><br>
             <a href="#">How to Sell</a><br>
             <a href="#">Promotion</a><br>
-        </div>
-        <div class="col_link">
+        </nav>
+        <nav class="col_link">
             <h3>SHOP CATEGORY</h3>
             <a href="#">Men</a><br>
             <a href="#">Women</a><br>
             <a href="#">Child</a><br>
             <a href="#">Apparel</a><br>
             <a href="#">Brows All</a><br>
-        </div>
+        </nav>
 </div>
 <div class="footer"> 
     <div class="container footerContent">
-        &copy;&nbsp;2020 Brand All Rights Reserved.
-        <div class="boxSocial">
-            <div class="social_logo"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
-            <div class="social_logo"><a href="#"><i class="fab fa-twitter"></i></a></div>
-            <div class="social_logo"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-            <div class="social_logo"><a href="#"><i class="fab fa-pinterest-p"></i></a></div>
-            <div class="social_logo"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
-        </div>
+        &copy; 2020 Brand All Rights Reserved.
+        <nav class="boxSocial">
+            <a class="social_logo" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="social_logo" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="social_logo" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social_logo" href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a class="social_logo" href="#"><i class="fab fa-google-plus-g"></i></a>
+        </nav>
     </div>
 </div>
 </body>
