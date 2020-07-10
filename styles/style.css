@@ -1,681 +1,1682 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+/* line 9, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 html,
-body{ 
-    margin: 0;
-    padding: 0; 
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
-.container{
-    width: 1140px;
-    margin: 0 auto;
-}
-/*Шапка сайта*/
-.header {
-    height: 99px;
-    border-bottom: 1px solid #e6e6e6;
-}
-.headercontainer{
-    height: inherit;
-    display: flex;
-    align-items: center;
-}
-.logo{
-    height: inherit;
-    background: url(../img/logo.png) center left no-repeat;
-    display: flex;
-    align-items: center;
-}
-.logo a{
-    text-decoration: none;
-    color: #222222;
-    font-size: 27px;
-    line-height: 32px;
-    font-weight: 300;
-    margin-left: 60px;
-    letter-spacing: 0.68px;
-}
-.logo span{
-    font-weight: 900;
-    color: #f16d7f;
-}
-.browseSearch {
-    height: 36px;
-    margin-left: 37px;
-    display: flex;
-    align-items: center;
-    border-radius: 3px;
-    border: 1px solid #e6e6e6;
-    overflow: hidden;
-}
-.browse {
-    width: 86px;
-    height: 36px;
-    text-align: center;
-    border-right: 1px solid #e6e6e6;
-    background-color: #f8f8f8;
-    text-decoration: none;
-    color: #222222;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 35px;
-    letter-spacing: 0.35px;
-}
-.browse i{
-    color: gray;
-    margin-left: 8px;
-}
-.browse:hover{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
-}
-.browse:active i{
-    color: #f16d7f;
-}
-.searchtop{
-    width: 264px;
-    padding-left: 16px;
-    border: none;
-    outline: none;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 34px;
-    letter-spacing: 0.35px;
-    background: none;
-}
-.searchtop:focus{
-    background-color: #e6e6e6;
-}
-.buttopSearchTop{
-    width: 36px;
-    background: none;
-    border: none;
-    border-left: 1px solid #e6e6e6;
-    height: inherit;
-    color: gray;
-    outline: none;
-}
-.buttopSearchTop:hover{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
-}
-.buttopSearchTop:active{
-    color: #f16d7f;
-}
-.cart{
-    margin-left: 351px;
-    margin-right: 26px;
-}
-.myAccount{
-    text-align: center;
-    width: 130px;
-    height: 38px;
-    background-color: #f16d7f; 
-    line-height: 38px;
-}
-.myAccount i{
-    margin-left: 8px;  
-}
-.myAccount a{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0.38px;
-    text-decoration: none;
-    color: white;
-}
-.myAccount:active{
-    background: linear-gradient(180deg, rgba(201,100,115,1) 0%, rgba(241,109,127,1) 100%);
-}
-/*Панель навигации*/
-.nav{
-    width: 680px;
-    margin: 0 auto;
-    height: 51px;
-    display: flex;
-    justify-content: space-between
-}
-.nav a{
-    text-decoration: none;
-    color: #222222;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 51px;
-}
-.nav a:hover{
-    color: dimgray;
-}
-.nav a:active{
-    color: #f16d7f;
-}
-/*Большой промо блок. Превью*/
-.prewiew {
-    overflow: hidden;
-    background-color: #e8e8e8;
-    height: 613px;
-}
-.prewiewText {
-    height: inherit;
-    color: #222222;
-    padding-left: 12px;
-    margin-top: 224px;
-    height: 91px;
-    font-weight: 900;
-    border-left: 10px solid #f16d7f;
-    font-size: 40px;
-    line-height: 63px;
-    letter-spacing: 1px;
-}
-.prewiewText div{
-    line-height: 43px;
-    font-size: 60px; 
-    letter-spacing: 1.5px;
-}
-.prewiewText span{
-    color: #f16d7f;
-}
-.backPrewiewtop {
-    overflow: hidden;
-    height: inherit;
-    background-image: url(../img/topHeaderBack.png);
-    background-repeat: no-repeat;
-    background-position: top right 40px;
-    background-size: 48%;
-}
-/*Категории*/
-.categories {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 820px;
-}
-.contanerCategories {
-    height: inherit;
-    position: relative;
-}
-.hotdeal {
-    width: 560px;
-    height: 542px;
-    background-image: url(../img/offer1.jpg);
-    position: absolute;
-    top:0;
-    left:0;
-}
-.luxious{
-    width: 560px;
-    height: 261px;
-    background-color: #dadad2;
-    background: url(../img/offer2.jpg) top right;
-    position: absolute;
-    bottom: 0;
-    left:0;
-}
-.offer30{
-    width: 560px;
-    height: 261px;
-    background-image: url(../img/offer3.jpg);
-    position: absolute;
-    top:0;
-    right:0;
-}
-.newArriwals{
-    width: 560px;
-    height: 542px;
-    background-image: url(../img/offer4.jpg);
-    position: absolute;
-    bottom:0;
-    right:0;
-}
-.whiteboxCattegories{
-    padding: 16px 16px 16px 16px;
-    position: absolute;
-    top: 26px;
-    background-color: #ffffff; 
-    text-decoration: none;
-    color: #222222;
-    font-size: 18px;
-    font-weight: 900;
-    letter-spacing: 0.45px;
-}
-.whiteboxCattegories div{
-    color: #f16d7f;
-    font-size: 30px;
-    letter-spacing: 0.75px;
-}
-.whiteboxCattegories:active{
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
-}
-/*Блок с товарами*/
-.featuredItems{
-    text-align: center;
-    color: #9f9f9f;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.35px;
-}
-.featuredItems span{
-    color: #222222;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 54px;
-    letter-spacing: 0.75px;
-}
-.itemS {
-    margin-top: 60px;
-    margin-bottom: 58px;
-}
-.row{
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-.item {
-position: relative;
-width: 260px;
-height: 364px;
-background-color: #ffffff;  
-overflow: hidden;
-}
-.item a{
-    text-decoration: none;
-}
-.item:hover{
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 
+/* line 18, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+input,
+button,
+select {
+  font-family: "Lato", sans-serif;
 }
+
+/* line 23, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+input:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+
+/* line 29, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+/* line 34, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*Шапка сайта*/
+/* line 40, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.header {
+  height: 99px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 45, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.headercontainer {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+/* line 51, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.logo {
+  height: inherit;
+  background: url(../img/logo.png) center left no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* line 57, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.logo a {
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  margin-left: 60px;
+  letter-spacing: 0.68px;
+}
+
+/* line 64, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.logo span {
+  font-weight: 900;
+  color: #f16d7f;
+}
+
+/* line 70, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.browseSearch {
+  height: 36px;
+  margin-left: 37px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+
+/* line 80, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.browse {
+  width: 86px;
+  height: 36px;
+  text-align: center;
+  border-right: 1px solid #e6e6e6;
+  background-color: #f8f8f8;
+  color: #222222;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: 0.35px;
+}
+
+/* line 91, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.browse:hover {
+  background: linear-gradient(180deg, white 0%, #ebebeb 100%);
+}
+
+/* line 94, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.browse i {
+  color: gray;
+  margin-left: 8px;
+}
+
+/* line 98, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.browse:active {
+  color: #f16d7f;
+}
+
+/* line 103, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.searchtop {
+  width: 264px;
+  padding-left: 16px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: 0.35px;
+  background: none;
+}
+
+/* line 114, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.searchtop:focus {
+  background-color: #e6e6e6;
+}
+
+/* line 119, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.buttopSearchTop {
+  width: 36px;
+  background: none;
+  border: none;
+  border-left: 1px solid #e6e6e6;
+  height: inherit;
+  color: gray;
+  outline: none;
+}
+
+/* line 128, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.buttopSearchTop:hover {
+  background: linear-gradient(180deg, white 0%, #ebebeb 100%);
+}
+
+/* line 131, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.buttopSearchTop:active {
+  color: #f16d7f;
+}
+
+/* line 136, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart {
+  margin-left: 351px;
+  margin-right: 26px;
+}
+
+/* line 141, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.myAccount {
+  text-align: center;
+  width: 130px;
+  height: 38px;
+  background-color: #f16d7f;
+  line-height: 38px;
+  border-radius: 3px;
+}
+
+/* line 149, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.myAccount:active {
+  background: linear-gradient(180deg, #c96473 0%, #f16d7f 100%);
+}
+
+/* line 152, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.myAccount i {
+  margin-left: 8px;
+}
+
+/* line 155, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.myAccount a {
+  font-size: 15px;
+  letter-spacing: 0.38px;
+  color: white;
+}
+
+/*Панель навигации Сверху*/
+/* line 163, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.topNav {
+  width: 680px;
+  margin: 0 auto;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 170, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.topNav a {
+  font-weight: 700;
+  line-height: 51px;
+}
+
+/* line 174, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.topNav a:hover {
+  color: dimgray;
+  border-bottom: 2px solid #f16d7f;
+}
+
+/* line 178, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.topNav a:active {
+  color: #acacac;
+}
+
+/* line 183, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.nav_here {
+  height: 148px;
+  background-color: #f8f3f4;
+}
+
+/* line 188, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.nav_titleAndCrump {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 194, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.nav_titleAndCrump h1 {
+  margin: 0;
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* line 202, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.breadcrumb {
+  font-weight: 300;
+}
+
+/* line 204, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.breadcrumb a {
+  color: #636363;
+}
+
+/* line 207, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.breadcrumb span {
+  font-weight: 700;
+  color: #f16d7f;
+}
+
+/*Большой промо блок. Превью*/
+/* line 214, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.prewiew {
+  overflow: hidden;
+  background-color: #e8e8e8;
+  height: 613px;
+}
+
+/* line 220, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.prewiewText {
+  color: #222222;
+  padding-left: 12px;
+  margin-top: 224px;
+  height: 91px;
+  font-weight: 900;
+  border-left: 10px solid #f16d7f;
+  font-size: 40px;
+  line-height: 63px;
+  letter-spacing: 1px;
+}
+
+/* line 231, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.prewiewText div {
+  line-height: 43px;
+  font-size: 60px;
+  letter-spacing: 1.5px;
+}
+
+/* line 236, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.prewiewText span {
+  color: #f16d7f;
+}
+
+/* line 241, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.backPrewiewtop {
+  overflow: hidden;
+  height: inherit;
+  background-image: url(../img/topHeaderBack.png);
+  background-repeat: no-repeat;
+  background-position: top right 40px;
+  background-size: 48%;
+}
+
+/*Категории*/
+/* line 251, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.categories {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 820px;
+}
+
+/* line 257, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.contanerCategories {
+  height: inherit;
+  position: relative;
+}
+
+/* line 262, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.hotdeal {
+  width: 560px;
+  height: 542px;
+  background-image: url(../img/offer1.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 271, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.luxious {
+  width: 560px;
+  height: 261px;
+  background-color: #dadad2;
+  background: url(../img/offer2.jpg) top right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 281, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.offer30 {
+  width: 560px;
+  height: 261px;
+  background-image: url(../img/offer3.jpg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 290, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.newArriwals {
+  width: 560px;
+  height: 542px;
+  background-image: url(../img/offer4.jpg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 299, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.whiteboxCattegories {
+  padding: 16px;
+  position: absolute;
+  top: 26px;
+  background-color: white;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.45px;
+}
+
+/* line 309, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.whiteboxCattegories div {
+  color: #f16d7f;
+  font-size: 30px;
+  letter-spacing: 0.75px;
+}
+
+/* line 314, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.whiteboxCattegories:active {
+  background: linear-gradient(90deg, white 0%, #ebebeb 100%);
+}
+
+/*Блок с товарами*/
+/* line 320, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.featuredItems {
+  text-align: center;
+  color: #9f9f9f;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+}
+
+/* line 326, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.featuredItems span {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0.75px;
+}
+
+/* line 335, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.rowItems {
+  overflow: hidden;
+}
+
+/* line 339, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.itemS {
+  width: 1168px;
+  margin: 0 auto;
+}
+
+/* line 344, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.item {
+  margin: 30px 15px;
+  float: left;
+  text-align: left;
+  position: relative;
+  width: 262px;
+  height: 364px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* line 354, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.item:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+/* line 359, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .prewiewITemImage {
-    position: relative;
-    text-align: center;
-    width: 261px;
-    height: 280px;
-    background-color: #e9e9e9;
+  position: relative;
 }
+
+/* line 362, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.prewiewITemImage img {
+  width: 261px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* line 370, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .nameItem {
-    margin: 19px 0 17px 15px;
-    color: #222222;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;  
+  margin: 19px 17px 15px;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
+/* line 378, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .price {
-    color: #f16d7f;
-    margin-left: 15px;
-    font-size: 16px;
-    font-weight: 900;
-    text-transform: uppercase;    
+  color: #f16d7f;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
+
+/* line 386, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .hoverItem {
-    text-decoration: none;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 261px;
-    height: 280px;
-    background-image: url(../imgSaleItems/Background.png);
-    display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 261px;
+  height: 280px;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
 }
-.AddCart{
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    width: 123px;
-    height: 39px;
-    border: 1px solid #ffffff;
-    background: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+/* line 396, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.hoverItem img {
+  object-fit: none;
+  width: 30px;
 }
-.AddCart:active{
-    background-color: #a2a2a2;
-    
+
+/* line 402, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.AddCart {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  width: 123px;
+  height: 39px;
+  border: 1px solid #ffffff;
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.item:hover .hoverItem{
-    display: flex;
+
+/* line 414, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.AddCart:active {
+  background-color: #a2a2a2;
 }
+
+/* line 419, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.item:hover .hoverItem {
+  display: flex;
+}
+
+/* line 422, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .browseAllbutton {
-margin: 0 auto;
-text-decoration: none;
-display: flex;
-align-items: center;
-width: 212px;
-height: 48px;
-background-color: #f16d7f;
+  clear: both;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 212px;
+  height: 48px;
+  background-color: #f16d7f;
 }
-.browseAllbutton:active{
-    background: linear-gradient(180deg, rgba(201,100,115,1) 0%, rgba(241,109,127,1) 100%);
+
+/* line 431, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.browseAllbutton:active {
+  background: linear-gradient(180deg, #c96473 0%, #f16d7f 100%);
 }
-.browseAllbutton span{
-margin-left: 24px;
-margin-right: 9px;
-color: #ffffff;
-font-size: 16px;
-font-weight: 700;
-letter-spacing: 0.4px;
+
+/* line 434, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.browseAllbutton span {
+  margin-left: 24px;
+  margin-right: 9px;
+  height: inherit;
+  line-height: 48px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
 }
+
 /*Рекламный блок с рекламой сервиса*/
+/* line 447, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .offer30Block {
-    margin-top: 113px;
-    height: 529px;
-    background: url(../img/offerForWomen.jpg) no-repeat;
-    background-color: #222224;
-    
+  margin-top: 113px;
+  height: 529px;
+  background: url(../img/offerForWomen.jpg) no-repeat;
+  background-color: #222222;
 }
+
+/* line 453, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .textOfferGirlImg {
-    margin-top: 142px;
-    margin-left: 39px;
-    height: 78px;
-    float: left;
-    color: #ffffff;
-    font-size: 54px;
-    font-weight: 700;
-    line-height: 47px;
-    letter-spacing: 1.5px;
+  margin-top: 142px;
+  margin-left: 39px;
+  float: left;
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 1.5px;
 }
-.textOfferGirlImg span{
-    color: #f16d7f;
+
+/* line 463, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.textOfferGirlImg span {
+  color: #f16d7f;
 }
-.textOfferGirlImg div{
-    font-size: 32px;
-    letter-spacing: 0.9px;
+
+/* line 466, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.textOfferGirlImg div {
+  font-size: 32px;
+  letter-spacing: 0.9px;
 }
+
+/* line 472, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .service {
-    float: right;
-    width: 373px;
-    color: white;
-    display: flex;
-    flex-direction: column;  
+  float: right;
+  width: 373px;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.service p{
-    margin-left: 111px;
-    width: 220px;
-    color: #fbfbfb;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19px;
-    letter-spacing: 0.35px;
+
+/* line 481, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.servicePoint {
+  height: 105px;
 }
-.freeDelivery {
-    margin-top: 48px;
-    height: 102px;
+
+/* line 484, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.servicePoint img {
+  float: left;
+  width: 113px;
+  height: inherit;
+  object-fit: none;
+  object-position: top center;
 }
-.buss {
-    margin-left: 36px;
-    display: flex;
-    align-items: center;
+
+/* line 491, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.servicePoint h2 {
+  float: left;
+  margin: 0;
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
-.buss span{
-    margin-left: 33px;
-    color: #fbfbfb;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+
+/* line 499, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.servicePoint p {
+  float: left;
+  margin-bottom: 0;
+  width: 220px;
+  color: #fbfbfb;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0.35px;
 }
-.salesDiscounts {
-    margin-left: 36px;
-    display: flex;
-    align-items: center;
-}
-.sale{
-    margin-top: 54px;
-    height: 102px; 
-}
-.sale span{
-    margin-left: 36px;
-    color: #fbfbfb;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-.qualityAssurance {
-    margin-left: 32px;
-    display: flex;
-    align-items: center;
-}
-.crown{
-    margin-top: 51px;
-    height: 102px; 
-}
-.crown span{
-    margin-left: 33px;
-    color: #fbfbfb;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
+
 /*Отзывы и подписка*/
+/* line 511, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .review {
-    position: relative;
-    margin: 100px auto 0;
-    width: 1600px;
-    height: 438px;
-    background-image: url(../img/subscribe.jpg);
-    overflow: hidden;
+  position: relative;
+  margin: 100px auto 0;
+  width: 1600px;
+  height: 438px;
+  background-image: url(../img/subscribe.jpg);
+  overflow: hidden;
 }
+
+/* line 519, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .reviewSmoke {
-    position: absolute;
-    height: inherit;
-    width: 100%;
-    background: url(../img/smoke.png) no-repeat;
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
 }
+
+/* line 525, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .reviewSpacing {
-    height: inherit;
+  height: inherit;
 }
+
+/* line 528, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .spaceenddelete {
-    background-color: #3e3e3e;
-    height: 600px;
+  background-color: #3e3e3e;
+  height: 600px;
 }
+
+/* line 532, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .comments {
-    width: 569px;
-    float: left;
-    height: inherit;
-    border-right: 1px solid white;
+  width: 569px;
+  float: left;
+  height: inherit;
+  border-right: 1px solid white;
 }
+
+/* line 538, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .subscribe_block {
-    float: left;
-    width: 569px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: inherit;
+  width: 569px;
 }
+
+/* line 546, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .subscribeText {
-    padding-top: 148px;
-    text-align: center;
-    color: #222224;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.35px;
-    line-height: 24px;
+  text-align: center;
+  color: #222222;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 24px;
 }
-.subscribeText span{
-font-size: 24px;
-letter-spacing: 0.6px;
+
+/* line 553, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.subscribeText span {
+  font-size: 24px;
+  letter-spacing: 0.6px;
 }
-.emailEnterSub{
-width: 386px;
-margin: 35px auto 0;
-height: 46px;
-border-radius: 23px;
-background-color: #e1e1e1;
-overflow: hidden;
+
+/* line 559, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.emailEnterSub {
+  width: 386px;
+  margin: 35px auto 0;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #e1e1e1;
+  overflow: hidden;
 }
-.emailEnterSub input{
-    width: 252px;
-    padding-left: 28px;
-    height: 46px;
-    border:none;
-    background: none;  
-    outline: none;
+
+/* line 567, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.emailEnterSub input {
+  width: 252px;
+  padding-left: 28px;
+  height: 46px;
+  border: none;
+  background: none;
+  outline: none;
 }
-.emailEnterSub input:focus{
-    background-color: white;
+
+/* line 575, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.emailEnterSub input:focus {
+  background-color: white;
 }
-.emailEnterSub button{
-    color: #ffffff;
-    font-family: 'Lato',sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.35px;
-    width: 104px;
-    height: inherit;
-    background-color: #f16d7f;
-    border: none;
-    outline: none;
+
+/* line 578, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.emailEnterSub button {
+  color: #ffffff;
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  width: 104px;
+  height: inherit;
+  background-color: #f16d7f;
+  border: none;
+  outline: none;
 }
-.emailEnterSub button:active{
-    background: linear-gradient(180deg, rgba(201,100,115,1) 0%, rgba(241,109,127,1) 100%);    
+
+/* line 589, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.emailEnterSub button:active {
+  background: linear-gradient(180deg, #c96473 0%, #f16d7f 100%);
 }
-.comments input{
-    border: none;
-    width: 100px;
-    background-color: aqua;
+
+/* line 594, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.comments input {
+  border: none;
+  width: 100px;
+  background-color: aqua;
 }
-.personalCommetsBlock{
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 0.3px;
-    line-height: 0px;
+
+/* line 599, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.personalCommetsBlock {
+  margin-top: 111px;
+  display: flex;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
 }
-.personalCommetsBlock img{
-    margin-top: 111px;
-    float: left;
+
+/* line 606, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.personalCommetsBlock img {
+  height: 83px;
+  width: 83px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
 }
-.textPersonalReview{
-    float: right;
-    margin-right: 72px;
-    margin-top: 123px;
-    margin-bottom: 37px;
+
+/* line 615, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.textPersonalReview {
+  margin-left: 28px;
 }
-.personalCommetsBlock p{
-    margin: 0;
-    width: 388px;
-    color: #222224;
-    font-style: italic;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.4px;
+
+/* line 619, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.commentText {
+  margin-top: 8px;
+  width: 388px;
+  color: #222222;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.4px;
 }
-.personalCommetsBlock span{
-    margin-top: 19px;
-    color: #f16d7f;
-    font-size: 16px;
-    font-weight: 900;
-    letter-spacing: 0.4px;
-    line-height: 36px;
+
+/* line 629, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.commentAutor {
+  margin: 15px 0 41px;
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  line-height: 14px;
 }
+
+/* line 637, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.commentAutor span {
+  margin: 0;
+  color: #222222;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* line 646, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .paginationBlock {
-    clear: both;
-    width: 140px;
-    margin-left: 115px;
-    display: flex;
-    justify-content:space-between;
+  clear: both;
+  width: 140px;
+  margin-left: 115px;
+  display: flex;
+  justify-content: space-between;
 }
-.pagination{
-    display: block;
-    width: 38px;
-    height: 4px;
-    background-color: #d6d6d6;
+
+/* line 653, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.pagination {
+  display: block;
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
 }
-.pagination:hover{
-    background-color: #f5f5f5;
+
+/* line 658, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.pagination:hover {
+  background-color: #f5f5f5;
 }
-.activePagination{
-    background-color: #f16d7f;
+
+/* line 663, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.activePagination {
+  background-color: #f16d7f;
 }
+
 /*Информация по комании и сайту*/
+/* line 668, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .logo_compinfo {
-    height: 51px;
-    background: url(../img/logo.png) center left no-repeat;
-    display: flex;
-    align-items: center;
+  height: 51px;
+  background: url(../img/logo.png) center left no-repeat;
+  display: flex;
+  align-items: center;
 }
-.brand {
-    width: 498px;
+
+/* line 674, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.logo_compinfo a {
+  height: auto;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  margin-left: 60px;
+  letter-spacing: 0.68px;
 }
-.brand p{
-width: 427px;
-color: #898989;
-font-size: 14px;
-font-weight: 300;
-line-height: 24px;
-letter-spacing: 0.35px;
+
+/* line 682, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.logo_compinfo span {
+  font-weight: 900;
+  color: #f16d7f;
 }
-.logo_compinfo a{
-    text-decoration: none;
-    color: #222222;
-    font-size: 27px;
-    line-height: 32px;
-    font-weight: 300;
-    margin-left: 60px;
-    letter-spacing: 0.68px;
+
+/* line 687, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.brand p {
+  width: 429px;
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
 }
-.logo_compinfo span{
-    font-weight: 900;
-    color: #f16d7f;
-}
+
+/* line 696, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .company_info {
-    margin-top: 109px;
-    display: flex;
+  margin-top: 109px;
+  display: flex;
+  justify-content: space-between;
 }
-.company_info h3{
-color: #f16d7f;
-font-size: 18px;
-font-weight: 700;
-line-height: 26px;
-letter-spacing: 0.45px;
+
+/* line 702, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.col_link {
+  flex-direction: column;
+  margin: 0 40px;
 }
-.col_info a{
-text-decoration: none;
-margin: 0;
-color: #898989;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0.4px;
-line-height: 39px; 
+
+/* line 706, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.col_link h3 {
+  color: #f16d7f;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.45px;
+  margin: 0 0 20px;
 }
-.col1,
-.col2{
-    width: 230px;
+
+/* line 714, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.col_link a {
+  color: #898989;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 42px;
 }
-.col_info a:hover{
-    color: #4d4d4d;
+
+/* line 720, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.col_link a:hover {
+  color: #4d4d4d;
 }
-.col_info a:active{
-    color: #f16d7f;
+
+/* line 723, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.col_link a:active {
+  color: #f16d7f;
 }
+
 /*футер и соцсети*/
+/* line 729, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .footer {
-    margin-top: 89px;
-    height: 79px;
-    background-color: #e6e6e6;
+  margin-top: 89px;
+  height: 79px;
+  background-color: #e6e6e6;
 }
+
+/* line 734, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .footerContent {
-    display: flex;
-    height: inherit;
-    align-items: center;
-    justify-content: space-between;
-    color: #7a7a7a;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: space-between;
+  color: #7a7a7a;
+  font-size: 16px;
+  letter-spacing: 0.4px;
 }
+
+/* line 743, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
 .boxSocial {
-    display: flex;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
 }
-.social_logo{
-    margin-left: 8px;
+
+/* line 749, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.social_logo i {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  text-align: center;
+  color: #b2b2b2;
+  font-size: 16px;
+  line-height: 32px;
 }
-.social_logo i{
-    width: 32px;
-    height: 32px;
-    background-color: white;
-    text-align: center;
-    color: #b2b2b2;
-    font-size: 16px;
-    line-height: 32px;
+
+/* line 757, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.social_logo i:hover {
+  color: #d8d8d8;
+  background-color: #ededed;
 }
-.social_logo:hover i{
-    color: #d8d8d8;
-    background-color: #ededed;
+
+/* line 761, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.social_logo i:active {
+  color: white;
+  background-color: #f16d7f;
 }
-.social_logo:active i{
-    color: white;
-    background-color: #f16d7f;
+
+/*CART PAGE*/
+/* line 768, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_list {
+  margin-top: 70px;
 }
+
+/* line 771, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_namesdetail {
+  height: 56px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+}
+
+/* line 777, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_namesdetail p {
+  margin: 0;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+
+/* line 785, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_namesdetail p:nth-child(1) {
+  margin-right: 400px;
+}
+
+/* line 788, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_namesdetail p:nth-child(2) {
+  margin-right: 100px;
+}
+
+/* line 791, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_namesdetail p:nth-child(3) {
+  margin-right: 78px;
+}
+
+/* line 794, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_namesdetail p:nth-child(4) {
+  margin-right: 80px;
+}
+
+/* line 797, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_namesdetail p:nth-child(5) {
+  margin-right: 57px;
+}
+
+/* line 802, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.product_inCart {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 22px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* line 809, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartproduct_discription {
+  text-align: left;
+  width: 480px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 815, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartproduct_discription img {
+  width: 100px;
+  height: 115px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* line 821, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartproduct_discription div {
+  margin-left: 21px;
+}
+
+/* line 824, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartproduct_discription a {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* line 829, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartproduct_discription p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #575757;
+}
+
+/* line 835, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartproduct_discription span {
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
+/* line 841, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_price {
+  padding: 0 20px;
+  width: 100px;
+  color: #656565;
+  font-size: 13px;
+}
+
+/* line 848, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.product_inCart input {
+  margin-left: 80px;
+  margin-right: 30px;
+  padding-left: 15px;
+  text-align: center;
+  font-weight: 400;
+  width: 34px;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #656565;
+}
+
+/* line 860, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.product_inCart input:focus {
+  outline: none;
+}
+
+/* line 865, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_shipping {
+  width: 120px;
+  padding: 0 20px;
+  color: #656565;
+  font-size: 13px;
+}
+
+/* line 872, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_subtotal_product {
+  width: 80px;
+  padding: 0 20px;
+  color: #656565;
+  font-size: 13px;
+}
+
+/* line 879, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_action {
+  margin-left: 30px;
+  width: 50px;
+}
+
+/* line 883, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_action a {
+  color: #c0c0c0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 890, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartResetAndContinue {
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 63px;
+}
+
+/* line 896, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartResetAndContinue button {
+  outline: none;
+  width: 235px;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* line 906, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartResetAndContinue button:active {
+  background-color: #eaeaea;
+}
+
+/* line 909, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartResetAndContinue a {
+  display: block;
+  text-align: center;
+  width: 235px;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 50px;
+}
+
+/* line 921, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartResetAndContinue a:active {
+  background-color: #eaeaea;
+}
+
+/* line 926, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartShippingAdressForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 930, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartShippingAdressForm input {
+  margin-top: 20px;
+  padding-left: 17px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* line 940, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartShippingAdressForm input:focus {
+  outline: none;
+}
+
+/* line 943, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartShippingAdressForm button:focus {
+  outline: none;
+}
+
+/* line 946, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartShippingAdressForm button:active {
+  background-color: #ebebeb;
+}
+
+/* line 951, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.shippindAdress {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 956, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.shippindAdress h2 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 22px;
+}
+
+/* line 962, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.shippindAdress select {
+  padding-left: 17px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+  -webkit-appearance: none;
+  /* Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  appearance: none;
+  background: url(../img/arrowForSelect.png) no-repeat;
+  background-position: right 8px center;
+}
+
+/* line 976, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.shippindAdress select:focus {
+  outline: none;
+}
+
+/* line 979, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.shippindAdress button {
+  width: 100px;
+  height: 35px;
+  margin-top: 23px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+/* line 990, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_CouponDiscount {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* line 997, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_CouponDiscount h2 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 22px;
+}
+
+/* line 1003, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cart_CouponDiscount button {
+  width: 118px;
+  height: 35px;
+  margin-top: 23px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+/* line 1015, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartGrandTotalSubmit {
+  text-align: right;
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  color: #4a4a4a;
+  font-size: 11px;
+}
+
+/* line 1023, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartGrandTotalSubmit div {
+  width: 273px;
+  margin: 40px auto 0;
+}
+
+/* line 1027, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartGrandTotalSubmit span {
+  margin-left: 22px;
+}
+
+/* line 1030, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartGrandTotalSubmit p {
+  color: #222222;
+  font-weight: 900;
+  font-size: 16px;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* line 1038, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.cartGrandTotalSubmit button {
+  padding: 0;
+  width: inherit;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: #f16d7f;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 17px;
+}
+
+/* line 1052, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.grand_totalPrice {
+  color: #f16d7f;
+}
+
+/*SINGLEPAGE*/
+/* line 1057, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_prew {
+  border: 1px solid #eaeaea;
+  background-color: #f7f7f7;
+  height: 777px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 1066, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem {
+  width: 1141px;
+  border: 1px solid #eaeaea;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: -83px;
+}
+
+/* line 1074, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem h2 {
+  margin: 53px 0 0;
+  box-sizing: content-box;
+  text-align: center;
+  color: #f16d7f;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 1083, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem h3 {
+  margin: 17px auto 67px;
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+}
+
+/* line 1091, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem h4 {
+  text-align: center;
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 1098, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem p {
+  margin: 0;
+  text-align: center;
+  color: #5e5e5e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 1106, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem button {
+  width: 537px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 23px auto 123px;
+  border: 1px solid #ef5b70;
+  background-color: white;
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+}
+
+/* line 1120, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem button:active {
+  background-color: #ffd1d1;
+}
+
+/* line 1123, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_infoItem button img {
+  margin-right: 10px;
+}
+
+/* line 1128, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_ContainerInfo {
+  width: 582px;
+  margin: 0 auto;
+}
+
+/* line 1133, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.decorationline_infoItem {
+  margin: 15px auto 0;
+  width: 147px;
+  height: 1px;
+  background-color: #eaeaea;
+  position: relative;
+}
+
+/* line 1141, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.decorationline_red {
+  position: absolute;
+  top: -1px;
+  left: 42px;
+  width: 63px;
+  height: 3px;
+  background-color: #f16d7f;
+}
+
+/* line 1150, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_spectfic_Item {
+  margin-top: 28px;
+  display: flex;
+}
+
+/* line 1155, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.spectficItem_characteristic {
+  color: #b9b9b9;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 1162, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.spectficItem_characteristic:nth-child(1) {
+  text-align: right;
+  margin-right: 44px;
+}
+
+/* line 1166, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.spectficItem_characteristic span {
+  color: #2f2f2f;
+}
+
+/* line 1172, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_Choices_Item {
+  border-top: 1px solid #eaeaea;
+  margin: 43px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 1179, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_ChoiseUser {
+  position: relative;
+  margin-top: 64px;
+  width: 144px;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+
+/* line 1186, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_ChoiseUser input {
+  width: 123px;
+  height: 31px;
+  padding-left: 15px;
+  margin-top: 16px;
+  color: #bcbcbc;
+  font-weight: 400;
+  border: 1px solid #e6e6e6;
+}
+
+/* line 1195, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_ChoiseUser select {
+  width: 142px;
+  height: 35px;
+  margin-top: 16px;
+  border: 1px solid #e6e6e6;
+  -webkit-appearance: none;
+  /* Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  appearance: none;
+  color: #bcbcbc;
+  font-size: 13px;
+  font-weight: 400;
+  background: url(../img/arrowForSelect.png) no-repeat;
+  background-position: right 8px center;
+}
+
+/* line 1209, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_ChoiseUser .single_userColor {
+  position: relative;
+  padding-left: 38px;
+}
+
+/* line 1213, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_ChoiseUser .single_userSize {
+  padding-left: 15px;
+}
+
+/* line 1217, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.selectColorPrew {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+  background-color: #ef5b70;
+}
+
+/* line 1225, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_you_may_like_also {
+  overflow: hidden;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 1230, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_you_may_like_also a {
+  float: left;
+}
+
+/* line 1233, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.single_you_may_like_also h2 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+/* line 1242, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.prewiew_like_Also {
+  width: 262px;
+  height: 280px;
+  background-color: #efefef;
+}
+
+/* line 1247, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.prewiew_like_Also img {
+  width: 261px;
+  height: 280px;
+  object-fit: contain;
+}
+
+/* line 1253, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.like_also_nameItem {
+  color: #6f6e6e;
+}
+
+/*CHECKOUT_PAGE*/
+/* line 1258, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main {
+  margin-top: 17px;
+}
+
+/* line 1261, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main section {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 1264, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main span {
+  color: #b3b2b2;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* line 1269, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main h2 {
+  display: flex;
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0;
+  padding: 32px 0;
+}
+
+/* line 1276, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main h2 span {
+  display: block;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  margin: 0;
+  height: inherit;
+  padding-right: 15px;
+}
+
+/* line 1286, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main h3 {
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+/* line 1292, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main h4 {
+  color: #222222;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 15px 0 8px;
+}
+
+/* line 1300, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main h4 span {
+  font-size: 17px;
+  color: red;
+}
+
+/* line 1304, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main button {
+  width: 180px;
+  height: 50px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+  color: #4a4a4a;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 1315, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main input {
+  width: 390px;
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+}
+
+/* line 1321, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_main .radio {
+  width: 14px;
+  height: 14px;
+  margin: 8px 14px 8px 0;
+  color: black;
+  border: 2px solid #555555;
+  background-color: white;
+}
+
+/* line 1330, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_content_01 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 79px;
+}
+
+/* line 1335, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_warrning {
+  margin-top: 22px;
+  color: red;
+}
+
+/* line 1340, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_shipAd_left {
+  margin-left: 37px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 1345, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_shipAd_left div {
+  display: flex;
+  align-items: center;
+  color: #222222;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 1353, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_shipAd_left button {
+  margin-top: 40px;
+}
+
+/* line 1356, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_shipAd_left .radioButtonBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 16px 0;
+}
+
+/* line 1363, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_shipAd_right {
+  margin-right: 166px;
+}
+
+/* line 1366, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_shipAd_right a {
+  margin-left: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* line 1372, C:/Users/Алексей/Desktop/hw/hw/styles/sass/style.scss */
+.checkout_shipAd_right button {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
