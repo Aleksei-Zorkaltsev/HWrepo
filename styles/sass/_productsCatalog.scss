@@ -1,34 +1,60 @@
+.productsMain{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 243px 1fr;
+    @media(max-width: 903px){
+        grid-template-columns: 1fr;
+    }
+}
 .catalog{
     display: flex;
 }
 .tr-size-priseBox{
-    display: flex;
-    @media(max-width:767px){
-        flex-direction: column;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: minmax(150px,1fr) minmax(150px,1fr) 1fr;
+    @media(max-width: 903px){
         justify-content: center;
+        grid-template-columns: 1fr 1fr;
     }
 }
 .catalog_tr-size-price{
     
-    @media(max-width:767px){
+    @media(max-width:903px){
         text-align: center;
     }
+    ul{
+        padding: 0;
+        width: 150px;
+        @media(max-width:903px){
+            margin: 0 auto;
+        }
+    }
+    ul li{
+        display: inline-block;
+        list-style-type: none;
+    }
     h2{
+    min-width: 150px;
     color: $colorTextGray;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
         @media(max-width:767px){
-        margin-top: 15px;
-    }
+            margin-top: 15px;
+        }
     }
     a{
         color: $colorTextGray;
-        padding: 0 8px;
-        margin-left: -8px;
         font-size: 14px;
         font-weight: 400;
         line-height: 26px;
+    }
+    &:nth-child(3){
+        @media(max-width:903px){
+            grid-column: 1 / -1;
+            text-align: center;
+        }
     }
 }
 .productBoxforCheckSize{
@@ -51,16 +77,15 @@
     justify-content: space-between;
 }
 .imgMinMaxRage{
-    width: inherit;
+    object-fit: cover;
     
     @media(max-width:767px){
         width: initial;
-        object-fit: contain;
+        object-fit: cover;
         object-position: top center;
     }
     @media(max-width:347px){
         width: inherit;
-        
     }
 }
 .navbar_catalog{
@@ -99,22 +124,13 @@
     }
 }
 .catalog_items{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    @media(max-width:767px){
-            justify-content: center;
-        }
-}
-.selection_item{
-    padding: 0;
-        @media(max-width:767px){
-            max-width: 265px;
-        }
+    margin-bottom: 30px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, 269px);
+    justify-content: center;
 }
 .item {
-    padding: 0;
-    margin: 15px 5px;
     text-align: left;
     position: relative;
     background-color: white;  
