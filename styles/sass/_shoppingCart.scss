@@ -1,6 +1,7 @@
 .cart_list {
     margin-top: 70px;
 }
+
 .cart_namesdetail {
     height: 56px;
     border-bottom: 1px solid $borderColor2;
@@ -8,15 +9,16 @@
     grid-template-columns: 455px 185px 155px 125px 170px 50px;
     text-align: center;
 }
-.cart_namesdetail p{
+
+.cart_namesdetail p {
     margin: 0;
     color: $textColorMain;
     font-size: 13px;
-    font-weight: 700;;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: -0.2px; 
-    
-    &:first-child{
+    letter-spacing: -0.2px;
+
+    &:first-child {
         text-align: left;
     }
 }
@@ -29,35 +31,40 @@
     padding: 22px 0;
     border-bottom: 1px solid $borderColor2;
 }
+
 .cartproduct_discription {
     text-align: left;
     display: flex;
     align-items: center;
-    
-    img{ 
+
+    img {
         width: 100px;
-        height: 115px;  
+        height: 115px;
         object-fit: cover;
         object-position: center center;
     }
-    div{
-       margin-left: 15px;  
+
+    div {
+        margin-left: 15px;
     }
-    a{
+
+    a {
         font-weight: 700;
         font-size: 13px;
         text-transform: uppercase;
     }
-    p{
+
+    p {
         font-size: 13px;
         font-weight: 700;
         line-height: 20px;
         color: #575757;
     }
-    span{
+
+    span {
         font-weight: 400;
         color: #6f6e6e;
-    } 
+    }
 }
 
 .cart_price {
@@ -66,7 +73,7 @@
     font-size: 13px;
 }
 
-.product_inCart input{
+.product_inCart input {
     padding-left: 15px;
     margin: 0 auto;
     text-align: center;
@@ -76,9 +83,9 @@
     border: 1px solid $borderColor2;
     background-color: #ffffff;
     color: #656565;
-    
-    &:focus{
-    outline: none;
+
+    &:focus {
+        outline: none;
     }
 }
 
@@ -95,7 +102,8 @@
 }
 
 .cart_action {
-    a{
+    
+    a {
         color: #c0c0c0;
         font-size: 16px;
         font-weight: 400;
@@ -107,8 +115,8 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 63px;
-    
-    button{
+
+    button {
         outline: none;
         width: 235px;
         height: 50px;
@@ -118,10 +126,12 @@
         font-size: 14px;
         font-weight: 900;
     }
-    button:active{
+
+    button:active {
         background-color: #eaeaea;
     }
-    a{
+
+    a {
         display: block;
         text-align: center;
         width: 235px;
@@ -133,8 +143,9 @@
         font-weight: 900;
         line-height: 50px;
     }
-    a:active{
-       background-color: #eaeaea; 
+
+    a:active {
+        background-color: #eaeaea;
     }
 }
 
@@ -142,24 +153,27 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
-    
-    input{
+
+    input {
         margin-top: 20px;
         padding-left: 17px;
         height: 45px;
         border: 1px solid $borderColor2;
-        background-color: #ffffff;  
+        background-color: #ffffff;
         color: #b1b1b1;
         font-size: 13px;
         font-weight: 300;
     }
-    input:focus{
+
+    input:focus {
         outline: none;
     }
-    button:focus{
+
+    button:focus {
         outline: none;
     }
-    button:active{
+
+    button:active {
         background-color: #ebebeb;
     }
 }
@@ -168,14 +182,15 @@
     width: 355px;
     display: flex;
     flex-direction: column;
-    
-    h2{
+
+    h2 {
         color: $textColorMain;
         font-size: 16px;
         font-weight: 900;
         margin-bottom: 22px;
     }
-    select{
+
+    select {
         padding-left: 17px;
         height: 45px;
         border: 1px solid $borderColor2;
@@ -189,10 +204,12 @@
         background: url(../img/arrowForSelect.png) no-repeat;
         background-position: right 8px center;
     }
-    select:focus{
+
+    select:focus {
         outline: none;
     }
-    button{
+
+    button {
         width: 100px;
         height: 35px;
         margin-top: 23px;
@@ -203,6 +220,7 @@
         font-weight: 900;
     }
 }
+
 .cart_CouponDiscount {
     width: 355px;
     display: flex;
@@ -210,13 +228,15 @@
     color: #000000;
     font-size: 14px;
     font-weight: 300;
-    h2{
+
+    h2 {
         color: $textColorMain;
         font-size: 16px;
         font-weight: 900;
-        margin-bottom: 22px;    
+        margin-bottom: 22px;
     }
-    button{
+
+    button {
         width: 118px;
         height: 35px;
         margin-top: 23px;
@@ -235,15 +255,17 @@
     background-color: #f5f3f3;
     color: #4a4a4a;
     font-size: 11px;
-    
-    div{
+
+    div {
         width: 273px;
         margin: 40px auto 0;
     }
-    span{
+
+    span {
         margin-left: 22px;
     }
-    p{
+
+    p {
         color: $textColorMain;
         font-weight: 900;
         font-size: 16px;
@@ -251,7 +273,8 @@
         padding: 14px 0;
         border-bottom: 1px solid #e2e2e2;
     }
-    button{
+
+    button {
         padding: 0;
         width: inherit;
         border: none;
@@ -265,22 +288,25 @@
     }
 }
 
-.grand_totalPrice{
+.grand_totalPrice {
     color: $themePageColor;
 }
-.product_service{
+
+.product_service {
     color: white;
     height: 341px;
     margin-top: 100px;
     background-color: #222224;
-} 
-.product_service_content{
+}
+
+.product_service_content {
     height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.product_serviseBlock{
+
+.product_serviseBlock {
     padding: 0 10px;
     text-align: center;
 }

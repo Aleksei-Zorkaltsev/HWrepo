@@ -1,49 +1,56 @@
 .header {
     min-height: 99px;
     border-bottom: 1px solid $borderColor;
-    .container{
-        display: flex; 
+
+    .container {
+        display: flex;
         min-height: inherit;
-        @media(max-width: 872px){
+
+        @media(max-width: 872px) {
             display: flex;
-            flex-direction: column;  
+            flex-direction: column;
             align-items: center;
         }
     }
 }
 
-.logo{
+.logo {
     background: url(../img/logo.png) center left no-repeat;
     display: flex;
     align-items: center;
-    width: 164px; 
+    width: 164px;
     min-height: inherit;
-    
-    @media(max-width: 872px){
+
+    @media(max-width: 872px) {
         height: 51px;
         margin: 15px 0;
         justify-content: center;
     }
-    a{
+
+    a {
         font-size: 27px;
         line-height: 32px;
         font-weight: 300;
         margin-left: 60px;
         letter-spacing: 0.68px;
     }
-    span{
+
+    span {
         font-weight: 900;
         color: $themePageColor;
     }
 }
-.header_browseSearch{
-        margin-left: 37px;
-        display: flex;
-        align-items: center;
-        @media(max-width: 872px){
-            margin-left: initial;
-            margin-bottom: 15px;
-        }
+
+.header_browseSearch {
+    margin-left: 37px;
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 872px) {
+        margin-left: initial;
+        margin-bottom: 15px;
+    }
+
     form {
         height: 36px;
         display: flex;
@@ -51,10 +58,12 @@
         border-radius: 3px;
         border: 1px solid $borderColor;
         overflow: hidden;
-        @media(max-width: 410px){
+
+        @media(max-width: 410px) {
             width: 300px;
         }
     }
+
     .browse {
         display: block;
         width: 86px;
@@ -67,18 +76,21 @@
         line-height: 35px;
         letter-spacing: 0.35px;
 
-        &:hover{
-            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+        &:hover {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
         }
-        i{
+
+        i {
             color: gray;
             margin-left: 8px;
         }
-        &:active{
+
+        &:active {
             color: $themePageColor;
         }
     }
-    .searchtop{
+
+    .searchtop {
         width: 264px;
         height: inherit;
         padding-left: 16px;
@@ -89,14 +101,17 @@
         line-height: 34px;
         letter-spacing: 0.35px;
         background: none;
-        @media(max-width: 410px){
+
+        @media(max-width: 410px) {
             width: 180px;
         }
-        &:focus{
+
+        &:focus {
             background-color: $borderColor;
         }
     }
-    .buttopSearchTop{
+
+    .buttopSearchTop {
         width: 36px;
         background: none;
         border: none;
@@ -105,41 +120,47 @@
         color: gray;
         outline: none;
 
-        &:hover{
-            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+        &:hover {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
         }
-        &:active{
+
+        &:active {
             color: $themePageColor;
         }
     }
 }
 
-.headerCart_Account{
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        @media(max-width: 872px){
-            margin-left: initial;
-            margin-bottom: 15px;
-        }
-    .cart{
+.headerCart_Account {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    @media(max-width: 872px) {
+        margin-left: initial;
+        margin-bottom: 15px;
+    }
+
+    .cart {
         margin: 0 26px;
     }
-    .myAccount{
+
+    .myAccount {
         text-align: center;
         width: 130px;
         height: 38px;
-        background-color: $themePageColor; 
+        background-color: $themePageColor;
         line-height: 38px;
         border-radius: 3px;
 
-        &:active{
-            background: linear-gradient(180deg, rgba(201,100,115,1) 0%, rgba(241,109,127,1) 100%);
+        &:active {
+            background: linear-gradient(180deg, rgba(201, 100, 115, 1) 0%, rgba(241, 109, 127, 1) 100%);
         }
-        i{
-            margin-left: 8px;  
+
+        i {
+            margin-left: 8px;
         }
-        a{
+
+        a {
             font-size: 15px;
             letter-spacing: 0.38px;
             color: white;

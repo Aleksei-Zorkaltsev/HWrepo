@@ -1,21 +1,25 @@
-.productsMain{
+.productsMain {
     margin-top: 60px;
 }
-.productsLeft{
+
+.productsLeft {
     border: none;
     border-radius: 0;
-    &:not(:last-child){
+
+    &:not(:last-child) {
         margin-bottom: 18px;
-    } 
+    }
 }
-.productLeftUnit{
+
+.productLeftUnit {
     height: 41px;
     position: relative;
     color: $themePageColor;
     font-size: 14px;
     font-weight: 700;
-    line-height: 20px; 
-    &:before{
+    line-height: 20px;
+
+    &:before {
         content: ' ';
         display: block;
         height: inherit;
@@ -27,8 +31,10 @@
     }
 
 }
-.productLeftNav{
-    a{
+
+.productLeftNav {
+    
+    a {
         display: block;
         color: $colorTextGray;
         font-size: 14px;

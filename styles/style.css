@@ -9933,7 +9933,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .nav_breadcrumb {
-  background-color: none;
+  background: none;
   font-weight: 300;
 }
 
@@ -10037,7 +10037,7 @@ a.text-dark:hover, a.text-dark:focus {
   .contanerCategories {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 261px);
-    grid-template-areas: "hotdeal"     "luxious" "offer30" "newArriwals";
+    grid-template-areas: "hotdeal" "luxious" "offer30" "newArriwals";
   }
 }
 
@@ -11035,9 +11035,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 16px;
   border: 1px solid #e6e6e6;
   -webkit-appearance: none;
-  /* Chrome */
   -moz-appearance: none;
-  /* Firefox */
   appearance: none;
   color: #bcbcbc;
   font-size: 13px;
